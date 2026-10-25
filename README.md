@@ -29,29 +29,10 @@ Splunk Enterprise and SPL; Windows Security auditing; Active Directory security;
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    DC["Windows Server DC01<br/>AD DS / Security events"]
-    EP["Windows 11 endpoint<br/>Windows events"]
-    OPT["Optional sources<br/>Sysmon / PowerShell logging"]
-    COL["Windows event collection<br/>and forwarding mechanism<br/>(configure and verify)"]
-    SPL["Splunk Enterprise<br/>Ubuntu EC2"]
-    IDX["Indexed and searchable<br/>telemetry"]
-    DET["SPL detections<br/>correlation searches"]
-    OUT["Dashboards, alerts,<br/>investigations and reports"]
 
-    DC --> COL
-    EP --> COL
-    OPT -. optional .-> COL
-    COL --> SPL
-    SPL --> IDX
-    IDX --> DET
-    DET --> OUT
-```
+![Figure 1: Splunk Active Directory Threat Detection Architecture](images/architecture.jpg)
 
-![Figure 1: Splunk Active Directory Threat Detection Architecture](evidence/screenshots/01-architecture.png)
-
-*Figure 1 — Placeholder: capture a rendered architecture diagram or sanitized view of the implemented design. Update the collection component after verifying the actual mechanism. Produce during architecture documentation; this image is not evidence until it exists.*
+*Figure 1 — Placeholder: capture a rendered architecture diagram of the implemented design.*
 
 | Component | Role | Security considerations |
 |---|---|---|
