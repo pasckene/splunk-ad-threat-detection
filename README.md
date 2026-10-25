@@ -26,34 +26,6 @@ This project uses **Splunk Enterprise on Ubuntu EC2**, a Windows Server domain c
 
 Splunk Enterprise and SPL; Windows Security auditing; Active Directory security; detection engineering; threat hunting; event correlation; MITRE ATT&CK mapping; incident investigation; AWS lab security; Git and technical documentation.
 
-### Status key
-
-- **Planned** — designed but not implemented.
-- **In progress** — work has started; completion is not established.
-- **Implemented — pending validation** — authored/configured but not yet validated with evidence.
-- **Verified** — tested and supported by saved evidence.
-
-| Capability | Current status | Evidence required |
-|---|---|---|
-| Splunk Enterprise on Ubuntu EC2 | Reported running; verify current health | Version, service status, Search & Reporting |
-| AD lab infrastructure | Exists; verify current configuration | Sanitized domain/controller and endpoint checks |
-| Windows telemetry in Splunk | Reported indexed; details unverified | Index discovery, raw events, event coverage |
-| SPL detection catalogue | Planned / in progress | Saved SPL, assumptions, review and test results |
-| Correlation searches | Planned | Related events and a verified timeline |
-| Dashboard and alerts | Planned | Actual dashboard and alert configuration |
-| Controlled validation | Planned | Completed test records and supporting telemetry |
-| Incident reports | Planned | Sanitized case report with evidence references |
-
-## Project capabilities
-
-| Capability | Purpose | Status |
-|---|---|---|
-| Windows event analysis | Establish which Windows events are available | In progress — verify |
-| Authentication monitoring | Identify patterns in successful and failed logons | Planned |
-| Cross-event correlation | Connect events by account, host, source, logon ID, and time | Planned |
-| Detection engineering | Turn documented hypotheses into testable SPL | Planned |
-| Threat hunting | Explore behavior beyond individual alerts | Planned |
-| Incident investigation | Produce evidence-based scope, impact, and conclusions | Planned |
 
 ## Architecture
 
